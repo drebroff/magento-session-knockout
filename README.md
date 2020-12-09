@@ -1,4 +1,5 @@
-# Magento2 Module Funami Session and Knockoutjs \(￣︶￣*\))
+# Magento2 Module Funami Session and Knockoutjs
+## \(￣︶￣*\))
 
     ``funami/module-session``
 
