@@ -1,0 +1,22 @@
+{
+    "name": "funami/module-session",
+    "description": "",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Dmitrij Rebrov",
+            "email": "dmitrij.rebrov@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Funami\\Session\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

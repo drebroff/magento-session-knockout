@@ -1,0 +1,37 @@
+Hello session/get.phtml SET! <br />
+<?php
+$block->getCatalogSession()->setMyName('Mageplaza101');
+//echo $block->getCatalogSession()->getMyName() . '<br />'; // output: Mageplaza
+$_SESSION['abc'] = 1234;
+//echo $_SESSION['abc'];
+//var_dump($_SESSION);
+
+$block->getCheckoutSession()->setTestData('Hello World101');
+//echo $block->getCheckoutSession()->getTestData() . '<br />'; // output: Hello World
+
+//$block->getCustomerSession()->setTestHello('Test Hello Value2');
+//echo $block->getCustomerSession()->getTestHello() . '<br />'; // output: Test Hello Value
+$block->setCustomData(12);
+
+echo $block->getCustomData();
+?>
+<div data-bind="template:'Funami_Session/hello'"></div>
+
+<!--<div data-mage-init='{"example": {"message": "HELLO WORLD!"}}'>-->
+<!--    Content-->
+<!--</div>-->
+
+<div id="one" class="foo">
+    Hello World
+</div>
+<div id="two" class="foo">
+    Goodbye World
+</div>
+<!---->
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Funami_Session/js/example":{}
+        }
+    }
+</script>

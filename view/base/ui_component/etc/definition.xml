@@ -1,0 +1,10 @@
+<components xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_definition.xsd">
+    <pulsestorm_simple class="Funami\Session\Component\Simple">
+        <argument name="data" xsi:type="array">
+            <!-- ... -->
+            <item name="config" xsi:type="array">
+                <item name="component" xsi:type="string">Funami_Session/js/pulsestorm_simple_component</item>
+            </item>
+        </argument>
+    </pulsestorm_simple>
+</components>

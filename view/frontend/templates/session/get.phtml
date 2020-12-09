@@ -1,0 +1,33 @@
+Hello session/get.phtml GET!<br />
+<?php
+//$block->getCatalogSession()->setMyName('Mageplaza');
+echo $block->getCatalogSession()->getMyName() . '<br />'; // output: Mageplaza
+var_dump($_SESSION);
+
+//$block->getCheckoutSession()->setTestData('Hello World');
+echo $block->getCheckoutSession()->getTestData() . '<br />'; // output: Hello World
+
+//$block->getCheckoutSession()->setTestHello('Test Hello Value');
+//echo $block->getCustomerSession()->getTestHello() . '<br />'; // output: Test Hello Value
+echo $block->getCustomData();
+
+?>
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "example-scope": {
+                    "component": "Funami_Session/js/knockout-example",
+                    "exampleMessage": "<?= __('Hello Magento Stack Exchange!!!') ?>"
+                }
+            }
+        }
+    }
+}
+</script>
+
+<div data-bind="scope: 'example-scope'">
+    <h2 data-bind="text: message"></h2>
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
